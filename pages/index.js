@@ -21,7 +21,9 @@ export default function Home() {
     loadNFTs();
   }, []);
   async function loadNFTs() {
-    const provider = new ethers.providers.JsonRpcProvider(rpcEndpoint);
+    const provider = new ethers.providers.JsonRpcProvider(
+      "https://polygon-mumbai.infura.io/v3/d6030038b9c0479e86c9f3698733ffbe"
+    );
     const tokenContract = new ethers.Contract(nftAddress, NFT.abi, provider);
     const marketContract = new ethers.Contract(
       nftMarketAddress,
