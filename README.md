@@ -1,15 +1,28 @@
-# Basic Sample Hardhat Project
+# Simple Full-stack NFT Marketplace
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+## Project Summary
 
-Try running some of the following tasks:
+- This project is created for learning purposes
+- This project is an NFT Marketplace project which consists of 2 smart contracts:
+  1. NFT Contract: Allows users to mint digital assets
+  2. Marketplace Contract: Allows users to place their digital assets for sale on the open market.
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+## Learning Goals
+
+- Build and deploy a full-stack NFT marketplace on the Ethereum blockchain
+
+## Stack
+
+- NextJS
+- Tailwind CSS
+- Ethers
+- Solidity
+- Hardhat
+
+# Setup
+
+1. Clone repo
+2. Install dependencies (run: yarn or npm install)
+3. Run: npx hardhat node
+4. Run: npx hardhat run scripts/deploy.js --network localhost
+5. Run: yarn dev
